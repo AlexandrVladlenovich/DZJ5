@@ -17,11 +17,11 @@ public class NameList {
             }
         }
 
-        for (var item : spisokImen.entrySet()) { // выводим какое имя сколько раз повторялось
+        for (var item : spisokImen.entrySet()) { 
             System.out.printf("Имя: %s, встречается %d раз(а)\n", item.getKey(), item.getValue());
         }
 
-        List<String> tempListName = new ArrayList<String>(); // создаем временный список с именами по порядку возрастания
+        List<String> tempListName = new ArrayList<String>(); 
         int tempNumber = 1;
         while(tempNumber < spisok.size()) {
             for (Map.Entry<String, Integer> item : spisokImen.entrySet()) {
@@ -29,8 +29,10 @@ public class NameList {
             }
             tempNumber++;
         }
+        System.out.println("Отсортированный список имен по возрастанию количества букв: ");
         System.out.println(tempListName);
-
+        
+        System.out.println("Отсортированный список по убыванию популярности имен: ");
         for (String str : tempListName) { 
             for (String strElem : spisok) {
                 String[] tempArr = strElem.split(" ");
