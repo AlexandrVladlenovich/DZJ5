@@ -37,7 +37,6 @@ public class Pyramid {
 	public static void main(String args[])
 	{
 		int arr[] = { 15, 13, 12, 5, 6, 7, 1, 28 }; // Вводим руками массив для сортировки
-		int N = arr.length;
 		Pyramid ob = new Pyramid();
 		ob.sort(arr);
 		System.out.println("Отсортированный массив ");
